@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vboxs - (akses awal)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader"></div>
+  <div class="container">
+    <div class="content active back" id="home">
+      <div class="clock-time">
+        <div id="clock"></div>
+        <p class="lokasion">Lokasion : indonesia</p>
+      </div>
+    </div>
+    <div class="content" id="about">
+      <h2>Virtual Media</h2>
+      <hr /><br />
+      <div class="icon-app1">
+        <a class="app" href="https://instagram.com">
+          <img class="icon" src="instagram.png" alt="error" />
+          <h5>instagram</h5>
+        </a>
+        <a class="app" href="https://whatsapp.com">
+          <img class="icon" src="whatsapp.png" alt="error" />
+          <h5>whatsapp</h5>
+        </a>
+        <a class="app" href="https://tiktok.com">
+          <img class="icon" src="tiktok.png" alt="error" />
+          <h5>tiktok</h5>
+        </a>
+      </div>
+      <div class="icon-app1">
+        <a class="app" href="https://youtobe.com">
+          <img style="border-radius: 50%;" class="icon" src="youtobe.png" alt="error" />
+          <h5>youtobe</h5>
+        </a>
+        <a class="app" href="https://facebook.com">
+          <img style="border-radius: 50%;" class="icon" src="facebook.png" alt="error" />
+          <h5>facebook</h5>
+        </a>
+        <a class="app" href="https://google.com">
+          <img style="border-radius: 50%;" class="icon" src="google.png" alt="error" />
+          <h5>google</h5>
+        </a>
+      </div>
+    </div>
+    <div class="content settings" id="contact">
+  <div class="grub">
+    <h2 class="title">REPORT</h2>
+    <hr />
+    <form id="reportForm">
+        <div class="form-group">
+            <label for="userName">Nama:</label>
+            <input type="text" id="userName" name="userName" required>
+        </div>
+        <div class="form-group">
+            <label for="userMessage">Laporan:</label>
+            <textarea id="userMessage" name="userMessage" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="deliveryMethod">Metode Pengiriman:</label>
+            <select id="deliveryMethod" name="deliveryMethod" required>
+                <option value="">Pilih Metode Pengiriman</option>
+                <option value="whatsapp">Whatsapp</option>
+                <option value="email">Email</option>
+            </select>
+        </div>
+        <button type="submit">Kirim Laporan</button>
+    </form>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">App</a></li>
+      <li><a href="#contact">Report</a></li>
+    </ul>
+  </nav>
+  <script src="script.js"></script>
+  <script src="clock.js"></script>
+  <script src="form.js"></script>
+</body>
+</html>
